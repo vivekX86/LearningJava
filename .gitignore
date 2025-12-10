@@ -1,0 +1,19 @@
+# IntelliJ / IDEA
+.idea/
+*.iml
+
+# Build output
+out/
+bin/
+target/
+build/
+
+# Java compiled classes
+*.class
+
+# VS Code (if you ever use it)
+.vscode/
+
+# OS noise
+.DS_Store
+Thumbs.db
