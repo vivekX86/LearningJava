@@ -1,4 +1,3 @@
-package day0;
 import java.util.*;
 
 public class printDetails {
