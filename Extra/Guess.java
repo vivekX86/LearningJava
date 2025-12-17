@@ -25,7 +25,7 @@ public class Guess {
             chance--;
             System.out.println("Chances left: " + chance);
         }
-        System.out.println("Better luck next time :), the number was "+number);
+        System.out.println("The number was "+number+" :)");
 
         sc.close();
     }
