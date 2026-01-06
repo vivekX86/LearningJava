@@ -1,4 +1,4 @@
-package Lab1;
+package Lab2;
 
 class Obj{
     static int count = 0;
