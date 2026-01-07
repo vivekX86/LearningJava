@@ -6,11 +6,11 @@ class plate{
     int width;
 
     void display(){
-        System.out.println("Plate Constructor Called");
         System.out.println("Length: "+this.length+" and Width: "+this.width);
     }
 
     plate(int l, int w){
+        System.out.println("Plate Constructor Called");
         this.length = l;
         this.width = w;
         display();
@@ -21,12 +21,12 @@ class box extends plate{
     int height;
 
     void display(){
-        System.out.println("Box Constructor Called");
         System.out.println("Length: "+this.length+", Width: "+this.width+" and Height: "+this.height);
     }
 
     box(int l, int w, int h){
         super(l,w);
+        System.out.println("Box Constructor Called");
         this.height = h;
         display();
     }
@@ -36,11 +36,11 @@ class woodBox extends box{
     int thick;
     woodBox(int l, int w, int h, int t){
         super(l,w,h);
+        System.out.println("WoodBox Constructor Called");
         this.thick = t;
     }
 
     public void display(){
-        System.out.println("WoodBox Constructor Called");
         System.out.println("Length: "+this.length+", Width: "+this.width+", Height: "+this.height+" and Thickness: "+this.thick);
     }
 }

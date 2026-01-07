@@ -37,22 +37,18 @@ public class DimensionOfBox{
         System.out.print("Select: \n1. Box \n2. Sheet \n");
         int option = sc.nextInt();
 
+        System.out.println("Enter Dimensions: ");
+        System.out.print("Length: ");
+        int l = sc.nextInt();
+        System.out.print("Breadth: ");
+        int b = sc.nextInt();
+
         if(option == 1){
-            System.out.println("Enter Dimensions: ");
-            System.out.print("Length: ");
-            int l = sc.nextInt();
             System.out.print("Height: ");
             int h = sc.nextInt();
-            System.out.print("Breadth: ");
-            int b = sc.nextInt();
             threeD box = new threeD(l,b,h);
             box.displayCost();
         } else if (option == 2) {
-            System.out.println("Enter Dimensions: ");
-            System.out.print("Length: ");
-            int l = sc.nextInt();
-            System.out.print("Breadth: ");
-            int b = sc.nextInt();
             twoD sheet = new twoD(l,b);
             sheet.displayCost();
         } else {

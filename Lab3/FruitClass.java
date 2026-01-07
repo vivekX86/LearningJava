@@ -1,6 +1,6 @@
 class Fruit{
     void show(){
-        System.out.println("Show method called from FRUIT CLASS");
+        System.out.println("Show FRUIT CLASS");
     }
     Fruit(){
         System.out.println("FRUIT Constructor called");
@@ -9,7 +9,7 @@ class Fruit{
 
 class Cherry extends Fruit{
     void show(){
-        System.out.println("Show method called from CHERRY CLASS");
+        System.out.println("Show CHERRY CLASS");
     }
     Cherry(){
         System.out.println("CHERRY Constructor called");
@@ -18,13 +18,12 @@ class Cherry extends Fruit{
 
 class Banana extends Fruit{
     void show(){
-        System.out.println("Show method called from BANANA CLASS");
+        System.out.println("Show BANANA CLASS");
     }
     Banana(){
         System.out.println("BANANA Constructor called");
     }
 }
-
 
 class FruitClass{
     public static void main(String[] args){
