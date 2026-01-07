@@ -32,9 +32,11 @@ class FruitClass{
         Cherry c = new Cherry();
         Banana b = new Banana();
 
-        f.show();
-        c.show();
-        b.show();
+        Fruit fRef;
+
+        fRef = f; fRef.show();
+        fRef = c; fRef.show();
+        fRef = b; fRef.show();
     }
 }
 
