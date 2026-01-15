@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Account{
+class Aaccount{
     int acc_no = 0;
     int balance = 0;
 
@@ -19,7 +19,7 @@ class Account{
     }
 }
 
-class Person extends Account{
+class Person extends Aaccount{
     String name;
     int aadhaar_no = 0;
 

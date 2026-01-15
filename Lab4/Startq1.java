@@ -109,7 +109,7 @@ class PremiumAccount extends Account{
     }
 }
 
-class Start{
+class Startq1{
     public static void main(String[] args){
         StandardAccount sAcc = new StandardAccount("Vivek", 50000);
         System.out.println("Account Created with name: "+sAcc.accountHolderName+" and balance: "+sAcc.balance+" and Account is "+sAcc.account_type);
