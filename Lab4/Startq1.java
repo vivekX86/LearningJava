@@ -121,7 +121,7 @@ class Startq1{
         aRef = sAcc; aRef.deposit();
         aRef = pAcc; aRef.withdraw();
         aRef = sAcc; aRef.withdraw();
-        aRef = pAcc; aRef.deposit();
+//        aRef = pAcc; aRef.deposit();
         aRef = sAcc; aRef.checkBalance();
         aRef = pAcc; aRef.checkBalance();
 
