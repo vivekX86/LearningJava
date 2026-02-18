@@ -1,7 +1,6 @@
 package Lab6;
 
 class University{
-    public University Department;
     String universityName;
     String location;
     class Department{
