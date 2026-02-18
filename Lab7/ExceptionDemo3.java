@@ -1,4 +1,4 @@
-package lab7;
+package Lab7;
 import java.util.Scanner;
 
 class NegativeNumberException extends Exception{
