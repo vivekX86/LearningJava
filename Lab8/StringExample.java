@@ -132,7 +132,6 @@ public class StringExample{
         String res = null;
         res = str.toUpperCase();
         System.out.println("The string after changing the case is: " + res);
-//        reverseStringUsingFunction(str);
         reverseString(str);
     }
 
@@ -180,7 +179,9 @@ public class StringExample{
 
         for (int i = 0; i < chars.length; i++) {
 
-            if( (i == 0 && chars[i] != ' ') || (i > 0 && chars[i] != ' ' && chars[i-1] == ' ') ){
+            if( (i == 0 && chars[i] != ' ')
+                    ||
+              (i > 0 && chars[i] != ' ' && chars[i-1] == ' ') ){
                 wordC++;
             }
 
@@ -204,6 +205,4 @@ public class StringExample{
         System.out.println("No. of vowels: " + vowelC);
         System.out.println("No. of consonants: " + consonantsC);
     }
-
-
 }

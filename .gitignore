@@ -10,7 +10,8 @@ build/
 
 # Java compiled classes
 *.class
-
+*.txt
+*.csv
 # VS Code (if you ever use it)
 .vscode/
 
