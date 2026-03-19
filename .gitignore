@@ -12,6 +12,8 @@ build/
 *.class
 *.txt
 *.csv
+*.png
+JDBC/*jar
 # VS Code (if you ever use it)
 .vscode/
 

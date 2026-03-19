@@ -64,7 +64,6 @@ public class Calculator {
         frame.add(calcLabel, gbc);
 
         display = new JTextField();
-        display.setSize(1,2);
         gbc.gridx = 2;
         gbc.gridwidth = 2;
         frame.add(display, gbc);
