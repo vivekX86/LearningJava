@@ -19,7 +19,6 @@ public class MultiThreadingDemo {
 
         frame.setLayout(new GridLayout(3, 1));
 
-        // IMAGE PANEL
         JPanel imgContainer = new JPanel(null);
         imgContainer.setBackground(Color.YELLOW);
 
@@ -27,7 +26,6 @@ public class MultiThreadingDemo {
         imgLabel.setBounds(50, 50, 100, 100);
         imgContainer.add(imgLabel);
 
-        // TEXT PANEL
         JPanel messageContainer = new JPanel(new BorderLayout());
         messageContainer.setBackground(Color.YELLOW);
 
@@ -35,7 +33,6 @@ public class MultiThreadingDemo {
         textLabel.setFont(new Font("Arial", Font.BOLD, 30));
         messageContainer.add(textLabel, BorderLayout.CENTER);
 
-        // BUTTON PANEL
         JPanel buttonContainer = new JPanel();
         buttonContainer.setBackground(Color.YELLOW);
         JButton startBtn = new JButton("Start");
@@ -50,7 +47,6 @@ public class MultiThreadingDemo {
 
         frame.setVisible(true);
 
-        // BUTTON ACTIONS
         startBtn.addActionListener(e -> {
             running = true;
             startAnimation(imgContainer);
@@ -60,7 +56,6 @@ public class MultiThreadingDemo {
         stopBtn.addActionListener(e -> running = false);
     }
 
-    // IMAGE ANIMATION THREAD
     static void startAnimation(JPanel container) {
 
         new Thread(() -> {
@@ -102,7 +97,6 @@ public class MultiThreadingDemo {
         }).start();
     }
 
-    // TEXT THREAD
     static void startTextChange() {
 
         String[] msgs = {"Welcome", "Enjoy", "Thanks", "Visit Again"};
@@ -126,7 +120,6 @@ public class MultiThreadingDemo {
         }).start();
     }
 
-    // UPDATE IMAGE POSITION (SAFE UI UPDATE)
     static void updateImage(int x, int y) {
         SwingUtilities.invokeLater(() ->
                 imgLabel.setBounds(x, y, 100, 100)
